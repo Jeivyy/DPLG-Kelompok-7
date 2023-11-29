@@ -1,0 +1,123 @@
+using System;
+namespace menu_makanan
+{
+    class food
+    {
+        static void Main(string[] args)
+        {
+            int Food = 0;
+            int Drink = 0;
+
+            Console.WriteLine("martabak baharia");
+
+            Console.WriteLine("Food : ");
+            Console.Write("1. Martabak baharia chesse mini = ");
+            Console.WriteLine("20.000");
+
+            Console.Write("2. Martabak baharia chesse medium = ");
+            Console.WriteLine("30.000");
+
+            Console.Write("3. Martabak baharia chesse large = ");
+            Console.WriteLine("50.000");
+
+            Console.Write("4. Martabak baharia nutt mini  = ");
+            Console.WriteLine("15.000");
+
+            Console.Write("5. Martabak baharia nutt medium = ");
+            Console.WriteLine("20.000");
+
+            Console.Write("6. Martabak baharia chesse large = ");
+            Console.WriteLine("40.000");
+
+            Console.Write("7. Martabak baharia cholatos mini = ");
+            Console.WriteLine("15.000");
+
+            Console.Write("8. Martabak baharia chocolatos medium = ");
+            Console.WriteLine("25.000");
+
+            Console.Write("9. Martabak baharia chocolatos large = ");
+            Console.WriteLine("45.000");
+
+            Console.WriteLine("minuman: ");
+            Console.Write("1. air mineral = ");
+            Console.WriteLine("5.000");
+
+            Console.Write("2. air jus mangga = ");
+            Console.WriteLine("7.000");
+
+            Console.Write("3. alpukat ngocok = ");
+            Console.WriteLine("10.000");
+
+            Console.WriteLine(" silahkan pesan ");
+            Console.Write("Food: ");
+            int Food2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Drink: ");
+            int Drink2 = Convert.ToInt32(Console.ReadLine());
+
+            //if else
+            if (Food2 == 1)
+            {
+                Console.Write("1. Martabak baharia chesse mini = ");
+                Console.WriteLine("20.000");
+            }
+            else if (Food2 == 2)
+            {
+                Console.Write("2. Martabak baharia chesse medium = ");
+                Console.WriteLine("30.000");
+            }
+            else if (Food2 == 3)
+            {
+                Console.Write("3. Martabak baharia chesse large = ");
+                Console.WriteLine("50.000");
+            }
+            else if (Food2 == 4)
+            {
+                Console.Write("4. Martabak baharia nutt mini  = ");
+                Console.WriteLine("15.000");
+            }
+            else if (Food2 == 5)
+            {
+                Console.Write("5. Martabak baharia nutt medium = ");
+                Console.WriteLine("20.000");
+            }
+            else if (Food2 == 6)
+            {
+                Console.Write("6. Martabak baharia chesse large = ");
+                Console.WriteLine("40.000");
+            }
+            else if (Food2 == 7)
+            {
+                Console.Write("7. Martabak baharia cholatos mini = ");
+                Console.WriteLine("15.000");
+            }
+            else if (Food2 == 8 )
+            {
+                Console.Write("8. Martabak baharia chocolatos medium = ");
+                Console.WriteLine("25.000");
+            }
+            else if (Food2 == 9)
+            {
+                Console.Write("9. Martabak baharia chocolatos large = ");
+                Console.WriteLine("45.000");
+            }
+
+            //minuman
+            if (Drink2 == 1)
+            {
+                Console.Write("1. air mineral = ");
+                Console.WriteLine("5.000");
+            }
+            else if (Drink2 == 2)
+            {
+                Console.Write("2. air jus mangga = ");
+                Console.WriteLine("7.000");
+            }
+            else if (Food2 == 3)
+            {
+                Console.Write("3. alpukat ngocok = ");
+                Console.WriteLine("10.000");
+            }
+
+        }
+    }
+}
