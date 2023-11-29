@@ -1,0 +1,52 @@
+using System;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace calculator_c_sharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string value;
+            do
+            {
+                int res;
+                Console.Write("Masukan angka pertama: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Masukan angka kedua: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Masukkan Operasi Mtk(/,+,-,*):");
+                string symbol = Console.ReadLine();
+ 
+                switch (symbol)
+                {
+                    case "+":
+                        res = num1 + num2;
+                        Console.WriteLine("Pertambahan: " + res);
+                        break;
+                    case "-":
+                        res = num1 - num2;
+                        Console.WriteLine("Pengurangan: " + res);
+                        break;
+                    case "*":
+                        res = num1 * num2;
+                        Console.WriteLine("Perkalian: " + res);
+                        break;
+                    case "/":
+                        res = num1 / num2;
+                        Console.WriteLine("Pembagian: " + res);
+                        break;
+                    default:
+                        Console.WriteLine("Masukkan operator mtk yang benar.");
+                        break;
+                }
+                Console.ReadLine();
+                Console.Write("Apa kamu mau mencoba lagi? (y/n): ");
+                value = Console.ReadLine();
+            }
+            while (value=="y" || value=="Y");
+        }
+    }
+ 
+}
